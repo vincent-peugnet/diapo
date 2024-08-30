@@ -11,6 +11,8 @@ Launch the script `./diapo.sh`. It will create images thumbnails, video thumbnai
 
 **Repo:** <https://github.com/vincent-peugnet/diapo>
 
+**DEMO:** <https://static.club1.fr/vincent/published/diapo/>
+
 Screenshots
 -----------
 
