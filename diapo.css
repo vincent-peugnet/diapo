@@ -22,6 +22,10 @@ body > * {
     overflow-y: scroll;
 }
 
+nav h1, nav p {
+    text-align: center;
+}
+
 nav ul {
     display: inline-flex;
     flex-wrap: wrap;
@@ -47,6 +51,7 @@ main {
     width: calc(100% - 520px);
     min-width: 70%;
     scroll-behavior: auto;
+    /* overflow: hidden; */
 }
 
 main > * {
@@ -59,9 +64,7 @@ main > * {
 }
 
 
-
-
-main div > * {
+main div .media {
     width: 100%;
     max-width: max-content;
     height: max-content;
@@ -81,6 +84,16 @@ main div > * {
 }
 
 
-nav h1, nav p {
-    text-align: center;
+main a.dir {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+main a.next {
+    cursor: e-resize;    
+}
+
+main a.prev {
+    cursor: w-resize;    
 }
