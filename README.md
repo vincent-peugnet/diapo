@@ -9,4 +9,11 @@ Pictures and video have to be stored in a folder called `media`. The script curr
 
 Launch the script `./diapo.sh`. It will create images thumbnails, video thumbnails and video posters.
 
-Repo : <https://github.com/vincent-peugnet/diapo>
+**Repo:** <https://github.com/vincent-peugnet/diapo>
+
+Screenshots
+-----------
+
+![desktop](https://static.club1.fr/vincent/published/diapo/desktop.webp)
+![small-screen](https://static.club1.fr/vincent/published/diapo/small-screen.webp)
+![mobile](https://static.club1.fr/vincent/published/diapo/mobile.webp)
