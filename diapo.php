@@ -45,11 +45,11 @@ $zipFiles = glob('*.zip');
 
 <main dir="ltr">
     <?php foreach ($files as $file) {
-        echo '<div>';
+        echo "<div id=\"$file\">";
         switch (pathinfo($file, PATHINFO_EXTENSION)) {
             case 'webm':
                 ?>
-                <video controls preload="none" id="<?= $file ?>" poster="media/poster/<?= pathinfo($file, PATHINFO_FILENAME) ?>.webp">
+                <video controls preload="none" poster="media/poster/<?= pathinfo($file, PATHINFO_FILENAME) ?>.webp">
                     <source src="media/<?= $file ?>" type="video/webm">
                 </video>
                 <?php
@@ -57,7 +57,7 @@ $zipFiles = glob('*.zip');
             
             default:
                 ?>
-                <img src="media/<?= $file ?>" alt="" loading="lazy"  id="<?= $file ?>">
+                <img src="media/<?= $file ?>" alt="" loading="lazy">
                 <?php
                 break;
         }
