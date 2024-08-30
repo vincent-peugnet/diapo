@@ -46,13 +46,6 @@ nav img {
     border-radius: 15px;
 }
 
-nav a[href$=webm] img {
-    /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
-    /* clip-path: circle(50% at 43% 50%); */
-    border-radius: 15px 50px 15px 50px;
-
-}
-
 main {
     scroll-snap-type: y mandatory;
     width: calc(100% - 520px);

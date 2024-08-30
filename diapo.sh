@@ -22,6 +22,6 @@ list=$(ls *.webm)
 for img in $list
 do
     imgName=${img%.webm}
-    convert $img[1] -strip -thumbnail '100x100^' -gravity center -extent 100x100 "thumbnail/$imgName.webp"
+    convert $img[1] -strip -thumbnail '100x100^' -gravity center -extent 100x100 -stroke gray -draw "path 'M 40,40 L 60,50 L 40,60 Z' " "thumbnail/$imgName.webp"
     convert $img[1] -quality 50 "poster/$imgName.webp"
 done

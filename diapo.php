@@ -17,6 +17,7 @@ $indexMax = $total - 1;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $currentDir ?></title>
     <link rel="stylesheet" href="diapo.css">
+    <meta name="generator" content="https://github.com/vincent-peugnet/diapo">
 </head>
 <body>
 
