@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function convert_video {
+function create_video_poster {
     vid="$1"
     vidBasename="$(basename "$vid")"
     vidName="${vidBasename%.*}"
@@ -10,7 +10,7 @@ function convert_video {
     convert "$vid"[1] -quality 50 "$posterName"
 }
 
-export -f convert_video
+export -f create_video_poster
 
 find media/ -maxdepth 1 -type f -print | parallel file --mime-type | grep -E ': (image|video)/[^:]*$' > media_list
 
@@ -27,7 +27,7 @@ cat images | xargs -r -d '\n' mogrify -format webp -path media/thumbnail -strip 
 
 echo 'rendering videos thumbnails and posters...'
 
-cat videos | parallel convert_video
+cat videos | parallel create_video_poster
 
 echo 'generating HTML web page...'
 
