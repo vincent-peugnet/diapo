@@ -125,13 +125,15 @@ $indexMax = $total - 1;
 <body>
 
 <nav>
-    <h1>
-        <?= $currentDir ?>
-    </h1>
-
-    <p>
-        <?= $total ?> files
-    </p>
+    <header>
+        <h1>
+            <?= $currentDir ?>
+        </h1>
+        
+        <p>
+            <?= $total ?> files
+        </p>
+    </header>
 
     <ul>
         <?php foreach ($medias as $media): ?>
